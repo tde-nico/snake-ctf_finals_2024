@@ -1,0 +1,14 @@
+services:
+  ciao:
+    build: .
+    volumes:
+      - vm:/srv/app/
+
+volumes:
+  vm:
+    driver: local
+    driver_opts:
+      type: none
+      device: ./
+      o: bind
+

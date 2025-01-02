@@ -1,0 +1,6 @@
+
+services:
+  cafe:
+    build: .
+    environment:
+      DISPLAY: "172.29.48.1:0.0"
